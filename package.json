@@ -5,8 +5,13 @@
     "express": "^4.15.2",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^7.0.2",
+    "next-redux-saga": "^3.0.0",
+    "next-redux-wrapper": "^3.0.0-alpha.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.1",
     "socket.io": "^1.7.3",
     "socket.io-client": "^1.7.3"
   },
@@ -14,5 +19,8 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
   }
 }
