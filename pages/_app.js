@@ -1,5 +1,9 @@
 import App, { Container } from 'next/app'
 import React from 'react'
+import { Provider } from 'react-redux'
+import withRedux from 'next-redux-wrapper'
+import withReduxSaga from 'next-redux-saga'
+import createStore from '../store'
 import io from 'socket.io-client'
 
 class MyApp extends App {
@@ -27,13 +31,15 @@ class MyApp extends App {
   }
 
   render () {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps, store } = this.props
     return (
       <Container>
-        <Component {...pageProps} socket={this.state.socket} />
+        <Provider store={store}>
+          <Component {...pageProps} socket={this.state.socket} />
+        </Provider>
       </Container>
     )
   }
 }
 
-export default MyApp
+export default withRedux(createStore)(withReduxSaga({ async: true })(MyApp))
