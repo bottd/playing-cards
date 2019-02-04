@@ -1,8 +1,11 @@
-const app = require('express')()
-const server = require('http').Server(app)
-const io = require('socket.io')(server)
+const express = require('express');
+const http = require('http');
+const socketIO = require('socket.io');
 const next = require('next')
 
+const app = express()
+const server = http.Server(app)
+const io = socketIO(server)
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 const nextApp = next({ dev })
