@@ -2,6 +2,7 @@
   "name": "with-socket.io",
   "version": "1.0.0",
   "dependencies": {
+    "es6-promise": "^4.2.5",
     "express": "^4.15.2",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^7.0.2",
