@@ -3,7 +3,7 @@ import { actionTypes } from '../actions';
 export const initialState = {
   connected: false,
   roomID: '',
-  userName: '',
+  username: '',
   userID: null,
   owner: false,
   hand: [],
