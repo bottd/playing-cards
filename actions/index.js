@@ -9,8 +9,10 @@ export const actionTypes = {
   endGame: 'END_GAME',
   hideCard: 'HIDE_CARD',
   resetRoomID: 'RESET_ROOM_ID',
+  resetUserID: 'RESET_USER_ID',
   resetUsername: 'RESET_USERNAME',
   revealCard: 'REVEAL_CARD',
+  setUserID: 'SET_USER_ID',
   updateRoomID: 'UPDATE_ROOM_ID',
   updateUsername: 'UPDATE_USERNAME',
 };
@@ -63,8 +65,16 @@ export const resetUsername = () => ({
   type: actionTypes.resetUsername,
 });
 
+export const resetUserID = () => ({
+  type: actionTypes.resetUserID,
+});
+
 export const revealCard = card => ({
   type: actionTypes.revealCard,
+});
+
+export const setUserID = id => ({
+  type: actionTypes.setUserID,
 });
 
 export const updateRoomID = id => ({
