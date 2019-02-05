@@ -8,10 +8,12 @@ export const actionTypes = {
   disconnectFromGame: 'DISCONNECT_FROM_GAME',
   endGame: 'END_GAME',
   hideCard: 'HIDE_CARD',
+  resetOwner: 'RESET_OWNER',
   resetRoomID: 'RESET_ROOM_ID',
   resetUserID: 'RESET_USER_ID',
   resetUsername: 'RESET_USERNAME',
   revealCard: 'REVEAL_CARD',
+  setOwner: 'SET_OWNER',
   setUserID: 'SET_USER_ID',
   updateRoomID: 'UPDATE_ROOM_ID',
   updateUsername: 'UPDATE_USERNAME',
@@ -57,6 +59,10 @@ export const hideCard = () => ({
   type: actionTypes.hideCard,
 });
 
+export const resetOwner = () => ({
+  type: actionTypes.resetOwner,
+});
+
 export const resetRoomID = () => ({
   type: actionTypes.resetRoomID,
 });
@@ -71,6 +77,10 @@ export const resetUserID = () => ({
 
 export const revealCard = card => ({
   type: actionTypes.revealCard,
+});
+
+export const setOwner = () => ({
+  type: actionTypes.resetOwner,
 });
 
 export const setUserID = id => ({
