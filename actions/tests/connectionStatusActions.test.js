@@ -1,4 +1,4 @@
-import { actionTypes, conectToGame, disconnectFromGame } from '../connectionStatusActions';
+import { actionTypes, connectToGame, disconnectFromGame } from '../connectionStatusActions';
 
 describe('Connection status actions', () => {
   describe('action types', () => {
