@@ -7,9 +7,7 @@ import { loadData } from '../actions';
 class ChatOne extends Component {
   // fetch old messages data from the server
   static async getInitialProps({ req }) {
-    const response = await fetch('http://localhost:3000/messages/chat1');
-    const messages = await response.json();
-    return { messages };
+    return {};
   }
 
   componentDidMount() {
@@ -30,7 +28,7 @@ class ChatOne extends Component {
   render() {
     return (
       <main>
-        <button onClick={this.props.loadData}>FETCH THINGS</button>
+        <h1>Hello World</h1>
       </main>
     );
   }
