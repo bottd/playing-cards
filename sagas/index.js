@@ -6,13 +6,13 @@ import { actionTypes, failure, loadDataSuccess, tickClock } from '../actions';
 
 es6promise.polyfill();
 
-function* runClockSaga() {
-  yield take(actionTypes.START_CLOCK);
-  while (true) {
-    yield put(tickClock(false));
-    yield call(delay, 1000);
-  }
-}
+//function* runClockSaga() {
+//yield take(actionTypes.START_CLOCK);
+//while (true) {
+//yield put(tickClock(false));
+//yield call(delay, 1000);
+//}
+//}
 
 function* loadDataSaga() {
   try {
