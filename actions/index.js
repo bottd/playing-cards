@@ -8,7 +8,9 @@ export const actionTypes = {
   disconnectFromGame: 'DISCONNECT_FROM_GAME',
   endGame: 'END_GAME',
   hideCard: 'HIDE_CARD',
+  resetRoomID: 'RESET_ROOM_ID',
   revealCard: 'REVEAL_CARD',
+  updateRoomID: 'UPDATE_ROOM_ID',
 };
 
 export const addCardToHand = card => ({
@@ -51,6 +53,15 @@ export const hideCard = () => ({
   type: actionTypes.hideCard,
 });
 
+export const resetRoomID = () => ({
+  type: actionTypes.resetRoomID,
+});
+
 export const revealCard = card => ({
   type: actionTypes.revealCard,
+});
+
+export const updateRoomID = id => ({
+  type: actionTypes.updateRoomID,
+  id,
 });
