@@ -19,9 +19,17 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "test": "jest --watchAll"
   },
   "devDependencies": {
+    "jest": "^24.0.0",
     "redux-devtools-extension": "^2.13.8"
-  }
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/!(node_modules)/**/__tests__/**/*.js?(x)",
+      "<rootDir>/!(node_modules)/**/?(*.)(spec|test).js?(x)"
+    ]
+   }
 }
