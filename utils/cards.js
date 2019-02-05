@@ -1,4 +1,4 @@
-module.exports.deck = [
+const deck = [
   {
     id: 1,
     name: 'Ace of Spades',
@@ -365,15 +365,17 @@ module.exports.deck = [
   },
 ];
 
-module.exports.joker = {
+const joker = {
   name: 'Joker',
   suite: 'none',
   symbol: 'joker',
   value: 0,
 };
 
-module.exports.deckWithJokers = [
-  ...cards,
-  { ...joker, id: 53 },
-  { ...joker, id: 54 },
-];
+const deckWithJokers = [...deck, { ...joker, id: 53 }, { ...joker, id: 54 }];
+
+module.exports = {
+  deck,
+  deckWithJokers,
+  joker,
+};
