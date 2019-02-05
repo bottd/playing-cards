@@ -9,8 +9,10 @@ export const actionTypes = {
   endGame: 'END_GAME',
   hideCard: 'HIDE_CARD',
   resetRoomID: 'RESET_ROOM_ID',
+  resetUsername: 'RESET_USERNAME',
   revealCard: 'REVEAL_CARD',
   updateRoomID: 'UPDATE_ROOM_ID',
+  updateUsername: 'UPDATE_USERNAME',
 };
 
 export const addCardToHand = card => ({
@@ -57,6 +59,10 @@ export const resetRoomID = () => ({
   type: actionTypes.resetRoomID,
 });
 
+export const resetUsername = () => ({
+  type: actionTypes.resetUsername,
+});
+
 export const revealCard = card => ({
   type: actionTypes.revealCard,
 });
@@ -64,4 +70,9 @@ export const revealCard = card => ({
 export const updateRoomID = id => ({
   type: actionTypes.updateRoomID,
   id,
+});
+
+export const updateUsername = username => ({
+  type: actionTypes.updateUsername,
+  username,
 });
