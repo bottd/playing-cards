@@ -31,23 +31,25 @@ export default class Game {
 
   dealCard(playerId) {
     const card = this.deck.pop();
-    this.players[playerId].addCard(card);
+    this.players[playerId - 1].addCard(card);
   }
 
   shuffleCards() {
-    let shuffleCount = this.deck.length;
-    while (shuffleCount > 0) {
-      const randInd = Math.floor(Math.random() * currentIndex);
-      const temp = this.deck[randInd];
-      this.deck[randInd] = this.deck[shuffleCount];
-      this.deck[shuffleCount] = temp;
-      shuffleCount -= 1;
+    const cardCount = this.deck.length;
+    for (let i = cardCount -1; i >= 0; i -= 1) {
+      const randInd = Math.floor(Math.random() * (cardCount))
+      const swap = this.deck[i];
+      this.deck[i] = this.deck[randInd];
+      this.deck[randInd] = swap;
+
     }
   }
 
   shuffleInDiscarded() {
-    this.deck = [...this.discarded, ...this.deck];
-    this.discarded = [];
+    if (this.discarded.length) {
+      this.deck = [...this.discarded, ...this.deck];
+      this.discarded = [];
+    }
     this.shuffleCards();
   }
 }

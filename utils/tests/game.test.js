@@ -83,4 +83,45 @@ describe('Game class', () => {
       expect(game.discard).toEqual([card]);
     });
   });
+
+  describe('dealCard', () => {
+    it('Should take the last card in the deck and give it to player', () => {
+      const card = game.deck[game.deck.length - 1];
+      game.dealCard(1);
+      expect(game.players[0].hand).toEqual([card]);
+      expect(game.deck.length).toBe(53);
+    });
+  });
+
+  describe('shuffle cards', () => {
+    it('Should randomize the card order', () => {
+      const deck = [...game.deck];
+      game.shuffleCards();
+      expect(game.deck).not.toEqual(deck);
+      expect(game.deck.length).toBe(deck.length);
+    });
+  });
+  describe('shuffleInDiscarded', () => {
+    it('Should empty out discarded cards and add them to deck', () => {
+      const initialLength = game.deck.length;
+      game.discarded = [
+        {
+          name: 'Joker',
+          suite: 'none',
+          symbol: 'joker',
+          value: 0,
+          hidden: true,
+        },
+      ];
+      game.shuffleInDiscarded();
+      expect(game.deck.length).toBe(initialLength + 1);
+      expect(game.discarded.length).toBe(0);
+    });
+
+    it('Should call shuffleCards', () => {
+      const spy = spyOn(game, 'shuffleCards');
+      game.shuffleInDiscarded();
+      expect(spy).toHaveBeenCalled();
+    });
+  });
 });
