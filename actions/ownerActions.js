@@ -8,5 +8,5 @@ export const resetOwner = () => ({
 });
 
 export const setOwner = () => ({
-  type: actionTypes.resetOwner,
+  type: actionTypes.setOwner,
 });
