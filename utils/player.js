@@ -10,7 +10,7 @@ export default class Player {
   }
 
   addCard(card) {
-    this.hand = [...hand, card];
+    this.hand = [...this.hand, card];
   }
 
   toggleCard(cardId) {
@@ -24,7 +24,7 @@ export default class Player {
 
   discardCard(cardId) {
     const card = this.hand.find(card => cardId === card.id);
-    this.hand = this.hand.filter(card => !cardId === card.id);
+    this.hand = this.hand.filter(card => cardId !== card.id);
     return card;
   }
 }
