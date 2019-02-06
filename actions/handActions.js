@@ -20,8 +20,9 @@ export const discardHand = () => ({
   type: actionTypes.discardHand,
 });
 
-export const hideCard = () => ({
+export const hideCard = card => ({
   type: actionTypes.hideCard,
+  card
 });
 
 export const revealCard = card => ({

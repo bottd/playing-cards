@@ -17,9 +17,14 @@ io.on('connection', socket => {
 });
 
 nextApp.prepare().then(() => {
-  //app.get('/messages/:chat', (req, res) => {
-  //res.json(messages[req.params.chat]);
-  //});
+  app.get('/messages/:chat', (req, res) => {
+
+  res.json(messages[req.params.chat]);
+  });
+
+  app.get('*', (req, res) => {
+    return nextHandler(req, res)
+  })
   server.listen(port, err => {
     if (err) throw err;
     console.log(`> Ready on http://localhost:${port}`);

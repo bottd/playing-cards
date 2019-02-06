@@ -19,3 +19,33 @@ Object {
   "type": "ADD_CARD_TO_HAND",
 }
 `;
+
+exports[`Hand actions discardCard Should match snapshot 1`] = `
+Object {
+  "card": Object {
+    "id": 1,
+    "name": "Ace of Spades",
+  },
+  "type": "DISCARD_CARD",
+}
+`;
+
+exports[`Hand actions hideCard Should match snapshot 1`] = `
+Object {
+  "card": Object {
+    "id": 1,
+    "name": "Ace of Spades",
+  },
+  "type": "HIDE_CARD",
+}
+`;
+
+exports[`Hand actions revealCard Should match snapshot 1`] = `
+Object {
+  "card": Object {
+    "id": 1,
+    "name": "Ace of Spades",
+  },
+  "type": "REVEAL_CARD",
+}
+`;
