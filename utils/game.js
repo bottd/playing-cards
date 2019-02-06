@@ -2,7 +2,8 @@ import { deck, deckWithJokers } from './cards';
 import Player from './player';
 
 export default class Game {
-  constructor(withJokers, player) {
+  constructor(withJokers = false, owner = 'Owner') {
+    const player = new Player(owner, 1);
     this.deck = withJokers ? deckWithJokers : deck;
     this.discard = [];
     this.players = [player];
@@ -14,12 +15,17 @@ export default class Game {
     this.players = [...this.players, player];
   }
 
+  removePlayer(name) {
+    this.players = this.players.filter(player => player.name !== name);
+    this.setPlayerIds();
+  }
+
   setPlayerIds() {
     this.players.forEach((player, ind) => player.setId(ind + 1));
   }
 
   discardPlayerCard(playerId, cardId) {
-    const card = this.players[playerId].discardCard(cardId);
+    const card = this.players[playerId - 1].discardCard(cardId);
     this.discard = [...this.discard, card];
   }
 
