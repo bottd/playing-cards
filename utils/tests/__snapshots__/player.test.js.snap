@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player class constructor Should match snapshot 1`] = `
+Player {
+  "hand": Array [],
+  "id": 2,
+  "name": "John",
+}
+`;
