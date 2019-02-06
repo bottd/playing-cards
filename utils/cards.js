@@ -1,4 +1,4 @@
-const deck = [
+export const deck = [
   {
     id: 1,
     name: 'Ace of Spades',
@@ -417,7 +417,7 @@ const deck = [
   },
 ];
 
-const joker = {
+export const joker = {
   name: 'Joker',
   suite: 'none',
   symbol: 'joker',
@@ -425,10 +425,4 @@ const joker = {
   hidden: true,
 };
 
-const deckWithJokers = [...deck, { ...joker, id: 53 }, { ...joker, id: 54 }];
-
-module.exports = {
-  deck,
-  deckWithJokers,
-  joker,
-};
+export const deckWithJokers = [...deck, { ...joker, id: 53 }, { ...joker, id: 54 }];
