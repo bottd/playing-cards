@@ -8,6 +8,6 @@ export const resetSocket = () => ({
 });
 
 export const setSocket = socket => ({
-  type: actionTypes.resetSocket,
+  type: actionTypes.setSocket,
   socket,
 });
