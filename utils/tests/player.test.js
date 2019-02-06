@@ -1,9 +1,8 @@
 import Player from '../player';
 
 describe('Player class', () => {
+  let player, id;
   const name = 'John';
-  const id = 2;
-  let player;
   const card = {
     id: 1,
     name: 'Ace of Spades',
@@ -33,19 +32,15 @@ describe('Player class', () => {
 
   beforeEach(() => {
     player = new Player(name, id);
+    id = player.id;
   });
   describe('constructor', () => {
-    it('Should default id to 1', () => {
-      const player = new Player('John');
-      expect(player.id).toBe(1);
+    it('Should be a uuid', () => {
+      expect(player.id.length).toBe(36);
     });
-    it('Should default player name to "Player id"', () => {
-      const player = new Player(undefined, 5);
-      expect(player.name).toBe('Player 5');
-    });
-    it('Should set name to Player 1 when no arguments given', () => {
+    it('Should default player name to "Player"', () => {
       const player = new Player();
-      expect(player.name).toBe('Player 1');
+      expect(player.name).toBe('Player');
     });
     it('Should have a name', () => {
       expect(player.name).toBe(name);
@@ -58,13 +53,6 @@ describe('Player class', () => {
     });
     it('Should match snapshot', () => {
       expect(player).toMatchSnapshot();
-    });
-  });
-
-  describe('setId', () => {
-    it('Should set a player id to given number', () => {
-      player.setId(5);
-      expect(player.id).toBe(5);
     });
   });
 
