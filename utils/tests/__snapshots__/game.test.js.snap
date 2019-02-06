@@ -437,10 +437,11 @@ Game {
     },
   ],
   "discard": Array [],
+  "owner": "UUID",
   "players": Array [
     Player {
       "hand": Array [],
-      "id": 1,
+      "id": "UUID",
       "name": "John",
     },
   ],

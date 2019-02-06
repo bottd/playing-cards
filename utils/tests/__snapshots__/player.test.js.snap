@@ -3,7 +3,7 @@
 exports[`Player class constructor Should match snapshot 1`] = `
 Player {
   "hand": Array [],
-  "id": 2,
+  "id": "UUID",
   "name": "John",
 }
 `;
