@@ -23,15 +23,17 @@ describe('Game class', () => {
       expect(game.players[0].name).toBe('Owner');
     });
     it('Should match snapshot', () => {
+      game.owner = 'UUID';
+      game.players[0].id = 'UUID';
       expect(game).toMatchSnapshot();
     });
   });
 
   describe('addPlayer', () => {
-    it('Should add a player to games players with incremental id', () => {
-      game.addPlayer('Sam');
+    it('Should add a player to games players with uuid', () => {
+      const id = game.addPlayer('Sam');
       expect(game.players.length).toBe(2);
-      expect(game.players[1].id).toBe(2);
+      expect(game.players[1].id).toBe(id);
       expect(game.players[1].name).toBe('Sam');
     });
     it('Should be able to add many players', () => {
@@ -44,26 +46,9 @@ describe('Game class', () => {
 
   describe('removePlayer', () => {
     it('Should remove a player from players array', () => {
-      game.addPlayer('Sam');
-      game.removePlayer('Sam');
+      const id = game.addPlayer('Sam');
+      game.removePlayer(id);
       expect(game.players.length).toBe(1);
-    });
-    it('Should call setPlayerIds', () => {
-      const spy = spyOn(game, 'setPlayerIds');
-      game.addPlayer('Sam');
-      game.removePlayer('Sam');
-      expect(spy).toHaveBeenCalled();
-    });
-  });
-
-  describe('setPlayerIds', () => {
-    it('Should fix the order of player ids should a player leave', () => {
-      game.addPlayer('Sam');
-      game.addPlayer('Joe');
-      game.players = [game.players[0], game.players[2]];
-      expect(game.players[1].id).toBe(3);
-      game.setPlayerIds();
-      expect(game.players[1].id).toBe(2);
     });
   });
 
@@ -78,7 +63,7 @@ describe('Game class', () => {
         hidden: true,
       };
       game.players[0].hand = [card];
-      game.discardPlayerCard(1, 1);
+      game.discardPlayerCard(game.owner, 1);
       expect(game.players[0].hand).toEqual([]);
       expect(game.discard).toEqual([card]);
     });
@@ -87,7 +72,7 @@ describe('Game class', () => {
   describe('dealCard', () => {
     it('Should take the last card in the deck and give it to player', () => {
       const card = game.deck[game.deck.length - 1];
-      game.dealCard(1);
+      game.dealCard(game.owner);
       expect(game.players[0].hand).toEqual([card]);
       expect(game.deck.length).toBe(53);
     });
@@ -104,7 +89,7 @@ describe('Game class', () => {
   describe('shuffleInDiscarded', () => {
     it('Should empty out discarded cards and add them to deck', () => {
       const initialLength = game.deck.length;
-      game.discarded = [
+      game.discard = [
         {
           name: 'Joker',
           suite: 'none',
@@ -115,7 +100,7 @@ describe('Game class', () => {
       ];
       game.shuffleInDiscarded();
       expect(game.deck.length).toBe(initialLength + 1);
-      expect(game.discarded.length).toBe(0);
+      expect(game.discard.length).toBe(0);
     });
 
     it('Should call shuffleCards', () => {

@@ -52,6 +52,7 @@ describe('Player class', () => {
       expect(player.hand).toEqual([]);
     });
     it('Should match snapshot', () => {
+      player.id = 'UUID'
       expect(player).toMatchSnapshot();
     });
   });
