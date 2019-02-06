@@ -21,6 +21,11 @@ describe('roomIdActions', () => {
       const result = updateRoomID(1);
       expect(result.type).toBe(expected);
     });
+    it('Should return an action with room id', () => {
+      const expected = 1;
+      const result = updateRoomID(expected);
+      expect(result.id).toBe(expected);
+    });
     it('Should match snapshot', () => {
       const result = updateRoomID(1);
       expect(result).toMatchSnapshot();
