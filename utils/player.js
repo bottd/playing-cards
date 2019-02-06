@@ -1,12 +1,10 @@
-export default class Player {
-  constructor(name, id = 1) {
-    this.name = name || `Player ${id}`;
-    this.id = id;
-    this.hand = [];
-  }
+import v1 from 'uuid/v1';
 
-  setId(num) {
-    this.id = num;
+export default class Player {
+  constructor(name) {
+    this.name = name || 'Player';
+    this.id = v1();
+    this.hand = [];
   }
 
   addCard(card) {
