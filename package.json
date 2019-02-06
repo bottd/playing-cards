@@ -31,6 +31,16 @@
     "testMatch": [
       "<rootDir>/!(node_modules)/**/__tests__/**/*.js?(x)",
       "<rootDir>/!(node_modules)/**/?(*.)(spec|test).js?(x)"
+    ],
+    "collectCoverageFrom": [
+      "*.{js,jsx}",
+      "actions/*.{js,jsx}",
+      "actions/*.{js,jsx}",
+      "components/*.{js,jsx}",
+      "pages/*.{js,jsx}",
+      "reducer/*.{js,jsx}",
+      "sagas/*.{js,jsx}",
+      "utils/*.{js,jsx}"
     ]
   }
 }
