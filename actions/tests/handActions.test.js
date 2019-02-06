@@ -17,6 +17,10 @@ describe('Hand actions', () => {
       const result = addCardToHand(mockCard);
       expect(result.type).toEqual(expected);
     });
+    it('Should return an action with passed card', () => {
+      const result = addCardToHand(mockCard);
+      expect(result.card).toEqual(mockCard);
+    });
     it('Should match snapshot', () => {
       expect(addCardToHand(mockCard)).toMatchSnapshot();
     });
