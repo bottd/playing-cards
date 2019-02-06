@@ -3,6 +3,7 @@
 exports[`Cards Deck Should match snapshot 1`] = `
 Array [
   Object {
+    "hidden": true,
     "id": 1,
     "name": "Ace of Spades",
     "suite": "spades",
@@ -10,6 +11,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 2,
     "name": "Two of Spades",
     "suite": "spades",
@@ -17,6 +19,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 3,
     "name": "Three of Spades",
     "suite": "spades",
@@ -24,6 +27,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 4,
     "name": "Four of Spades",
     "suite": "spades",
@@ -31,6 +35,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 5,
     "name": "Five of Spades",
     "suite": "spades",
@@ -38,6 +43,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 6,
     "name": "Six of Spades",
     "suite": "spades",
@@ -45,6 +51,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 7,
     "name": "Seven of Spades",
     "suite": "spades",
@@ -52,6 +59,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 8,
     "name": "Eight of Spades",
     "suite": "spades",
@@ -59,6 +67,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 9,
     "name": "Nine of Spades",
     "suite": "spades",
@@ -66,6 +75,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 10,
     "name": "10 of Spades",
     "suite": "spades",
@@ -73,6 +83,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 11,
     "name": "Jack of Spades",
     "suite": "spades",
@@ -80,6 +91,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 12,
     "name": "Queen of Spades",
     "suite": "spades",
@@ -87,6 +99,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 13,
     "name": "King of Spades",
     "suite": "spades",
@@ -94,6 +107,7 @@ Array [
     "value": "13",
   },
   Object {
+    "hidden": true,
     "id": 14,
     "name": "Ace of Clubs",
     "suite": "clubs",
@@ -101,6 +115,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 15,
     "name": "Two of Clubs",
     "suite": "clubs",
@@ -108,6 +123,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 16,
     "name": "Three of Clubs",
     "suite": "clubs",
@@ -115,6 +131,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 17,
     "name": "Four of Clubs",
     "suite": "clubs",
@@ -122,6 +139,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 18,
     "name": "Five of Clubs",
     "suite": "clubs",
@@ -129,6 +147,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 19,
     "name": "Six of Clubs",
     "suite": "clubs",
@@ -136,6 +155,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 20,
     "name": "Seven of Clubs",
     "suite": "clubs",
@@ -143,6 +163,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 21,
     "name": "Eight of Clubs",
     "suite": "clubs",
@@ -150,6 +171,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 22,
     "name": "Nine of Clubs",
     "suite": "clubs",
@@ -157,6 +179,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 23,
     "name": "10 of Clubs",
     "suite": "clubs",
@@ -164,6 +187,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 24,
     "name": "Jack of Clubs",
     "suite": "clubs",
@@ -171,6 +195,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 25,
     "name": "Queen of Clubs",
     "suite": "clubs",
@@ -178,6 +203,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 26,
     "name": "King of Clubs",
     "suite": "clubs",
@@ -185,6 +211,7 @@ Array [
     "value": "13",
   },
   Object {
+    "hidden": true,
     "id": 27,
     "name": "Ace of Diamonds",
     "suite": "diamonds",
@@ -192,6 +219,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 28,
     "name": "Two of Diamonds",
     "suite": "diamonds",
@@ -199,6 +227,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 29,
     "name": "Three of Diamonds",
     "suite": "diamonds",
@@ -206,6 +235,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 30,
     "name": "Four of Diamonds",
     "suite": "diamonds",
@@ -213,6 +243,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 31,
     "name": "Five of Diamonds",
     "suite": "diamonds",
@@ -220,6 +251,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 32,
     "name": "Six of Diamonds",
     "suite": "diamonds",
@@ -227,6 +259,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 33,
     "name": "Seven of Diamonds",
     "suite": "spades",
@@ -234,6 +267,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 34,
     "name": "Eight of Diamonds",
     "suite": "diamonds",
@@ -241,6 +275,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 35,
     "name": "Nine of Diamonds",
     "suite": "diamonds",
@@ -248,6 +283,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 36,
     "name": "10 of Diamonds",
     "suite": "diamonds",
@@ -255,6 +291,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 37,
     "name": "Jack of Diamonds",
     "suite": "diamonds",
@@ -262,6 +299,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 38,
     "name": "Queen of Diamonds",
     "suite": "diamonds",
@@ -269,6 +307,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 39,
     "name": "King of Diamonds",
     "suite": "diamonds",
@@ -276,6 +315,7 @@ Array [
     "value": "13",
   },
   Object {
+    "hidden": true,
     "id": 40,
     "name": "Ace of Hearts",
     "suite": "hearts",
@@ -283,6 +323,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 41,
     "name": "Two of Hearts",
     "suite": "hearts",
@@ -290,6 +331,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 42,
     "name": "Three of Hearts",
     "suite": "hearts",
@@ -297,6 +339,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 43,
     "name": "Four of Hearts",
     "suite": "hearts",
@@ -304,6 +347,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 44,
     "name": "Five of Hearts",
     "suite": "hearts",
@@ -311,6 +355,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 45,
     "name": "Six of Hearts",
     "suite": "hearts",
@@ -318,6 +363,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 46,
     "name": "Seven of Hearts",
     "suite": "hearts",
@@ -325,6 +371,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 47,
     "name": "Eight of Hearts",
     "suite": "hearts",
@@ -332,6 +379,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 48,
     "name": "Nine of Hearts",
     "suite": "hearts",
@@ -339,6 +387,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 49,
     "name": "10 of Hearts",
     "suite": "hearts",
@@ -346,6 +395,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 50,
     "name": "Jack of Hearts",
     "suite": "hearts",
@@ -353,6 +403,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 51,
     "name": "Queen of Hearts",
     "suite": "hearts",
@@ -360,6 +411,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 52,
     "name": "King of Hearts",
     "suite": "hearts",
@@ -372,6 +424,7 @@ Array [
 exports[`Cards Deck with Jokers Should match snapshot 1`] = `
 Array [
   Object {
+    "hidden": true,
     "id": 1,
     "name": "Ace of Spades",
     "suite": "spades",
@@ -379,6 +432,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 2,
     "name": "Two of Spades",
     "suite": "spades",
@@ -386,6 +440,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 3,
     "name": "Three of Spades",
     "suite": "spades",
@@ -393,6 +448,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 4,
     "name": "Four of Spades",
     "suite": "spades",
@@ -400,6 +456,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 5,
     "name": "Five of Spades",
     "suite": "spades",
@@ -407,6 +464,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 6,
     "name": "Six of Spades",
     "suite": "spades",
@@ -414,6 +472,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 7,
     "name": "Seven of Spades",
     "suite": "spades",
@@ -421,6 +480,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 8,
     "name": "Eight of Spades",
     "suite": "spades",
@@ -428,6 +488,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 9,
     "name": "Nine of Spades",
     "suite": "spades",
@@ -435,6 +496,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 10,
     "name": "10 of Spades",
     "suite": "spades",
@@ -442,6 +504,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 11,
     "name": "Jack of Spades",
     "suite": "spades",
@@ -449,6 +512,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 12,
     "name": "Queen of Spades",
     "suite": "spades",
@@ -456,6 +520,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 13,
     "name": "King of Spades",
     "suite": "spades",
@@ -463,6 +528,7 @@ Array [
     "value": "13",
   },
   Object {
+    "hidden": true,
     "id": 14,
     "name": "Ace of Clubs",
     "suite": "clubs",
@@ -470,6 +536,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 15,
     "name": "Two of Clubs",
     "suite": "clubs",
@@ -477,6 +544,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 16,
     "name": "Three of Clubs",
     "suite": "clubs",
@@ -484,6 +552,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 17,
     "name": "Four of Clubs",
     "suite": "clubs",
@@ -491,6 +560,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 18,
     "name": "Five of Clubs",
     "suite": "clubs",
@@ -498,6 +568,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 19,
     "name": "Six of Clubs",
     "suite": "clubs",
@@ -505,6 +576,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 20,
     "name": "Seven of Clubs",
     "suite": "clubs",
@@ -512,6 +584,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 21,
     "name": "Eight of Clubs",
     "suite": "clubs",
@@ -519,6 +592,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 22,
     "name": "Nine of Clubs",
     "suite": "clubs",
@@ -526,6 +600,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 23,
     "name": "10 of Clubs",
     "suite": "clubs",
@@ -533,6 +608,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 24,
     "name": "Jack of Clubs",
     "suite": "clubs",
@@ -540,6 +616,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 25,
     "name": "Queen of Clubs",
     "suite": "clubs",
@@ -547,6 +624,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 26,
     "name": "King of Clubs",
     "suite": "clubs",
@@ -554,6 +632,7 @@ Array [
     "value": "13",
   },
   Object {
+    "hidden": true,
     "id": 27,
     "name": "Ace of Diamonds",
     "suite": "diamonds",
@@ -561,6 +640,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 28,
     "name": "Two of Diamonds",
     "suite": "diamonds",
@@ -568,6 +648,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 29,
     "name": "Three of Diamonds",
     "suite": "diamonds",
@@ -575,6 +656,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 30,
     "name": "Four of Diamonds",
     "suite": "diamonds",
@@ -582,6 +664,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 31,
     "name": "Five of Diamonds",
     "suite": "diamonds",
@@ -589,6 +672,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 32,
     "name": "Six of Diamonds",
     "suite": "diamonds",
@@ -596,6 +680,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 33,
     "name": "Seven of Diamonds",
     "suite": "spades",
@@ -603,6 +688,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 34,
     "name": "Eight of Diamonds",
     "suite": "diamonds",
@@ -610,6 +696,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 35,
     "name": "Nine of Diamonds",
     "suite": "diamonds",
@@ -617,6 +704,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 36,
     "name": "10 of Diamonds",
     "suite": "diamonds",
@@ -624,6 +712,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 37,
     "name": "Jack of Diamonds",
     "suite": "diamonds",
@@ -631,6 +720,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 38,
     "name": "Queen of Diamonds",
     "suite": "diamonds",
@@ -638,6 +728,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 39,
     "name": "King of Diamonds",
     "suite": "diamonds",
@@ -645,6 +736,7 @@ Array [
     "value": "13",
   },
   Object {
+    "hidden": true,
     "id": 40,
     "name": "Ace of Hearts",
     "suite": "hearts",
@@ -652,6 +744,7 @@ Array [
     "value": "1",
   },
   Object {
+    "hidden": true,
     "id": 41,
     "name": "Two of Hearts",
     "suite": "hearts",
@@ -659,6 +752,7 @@ Array [
     "value": "2",
   },
   Object {
+    "hidden": true,
     "id": 42,
     "name": "Three of Hearts",
     "suite": "hearts",
@@ -666,6 +760,7 @@ Array [
     "value": "3",
   },
   Object {
+    "hidden": true,
     "id": 43,
     "name": "Four of Hearts",
     "suite": "hearts",
@@ -673,6 +768,7 @@ Array [
     "value": "4",
   },
   Object {
+    "hidden": true,
     "id": 44,
     "name": "Five of Hearts",
     "suite": "hearts",
@@ -680,6 +776,7 @@ Array [
     "value": "5",
   },
   Object {
+    "hidden": true,
     "id": 45,
     "name": "Six of Hearts",
     "suite": "hearts",
@@ -687,6 +784,7 @@ Array [
     "value": "6",
   },
   Object {
+    "hidden": true,
     "id": 46,
     "name": "Seven of Hearts",
     "suite": "hearts",
@@ -694,6 +792,7 @@ Array [
     "value": "7",
   },
   Object {
+    "hidden": true,
     "id": 47,
     "name": "Eight of Hearts",
     "suite": "hearts",
@@ -701,6 +800,7 @@ Array [
     "value": "8",
   },
   Object {
+    "hidden": true,
     "id": 48,
     "name": "Nine of Hearts",
     "suite": "hearts",
@@ -708,6 +808,7 @@ Array [
     "value": "9",
   },
   Object {
+    "hidden": true,
     "id": 49,
     "name": "10 of Hearts",
     "suite": "hearts",
@@ -715,6 +816,7 @@ Array [
     "value": "10",
   },
   Object {
+    "hidden": true,
     "id": 50,
     "name": "Jack of Hearts",
     "suite": "hearts",
@@ -722,6 +824,7 @@ Array [
     "value": "11",
   },
   Object {
+    "hidden": true,
     "id": 51,
     "name": "Queen of Hearts",
     "suite": "hearts",
@@ -729,6 +832,7 @@ Array [
     "value": "12",
   },
   Object {
+    "hidden": true,
     "id": 52,
     "name": "King of Hearts",
     "suite": "hearts",
@@ -736,6 +840,7 @@ Array [
     "value": "13",
   },
   Object {
+    "hidden": true,
     "id": 53,
     "name": "Joker",
     "suite": "none",
@@ -743,6 +848,7 @@ Array [
     "value": 0,
   },
   Object {
+    "hidden": true,
     "id": 54,
     "name": "Joker",
     "suite": "none",
@@ -754,6 +860,7 @@ Array [
 
 exports[`Cards Joker Should match snapshot 1`] = `
 Object {
+  "hidden": true,
   "name": "Joker",
   "suite": "none",
   "symbol": "joker",

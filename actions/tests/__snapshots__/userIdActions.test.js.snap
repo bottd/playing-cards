@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`userIdActions Action types Should match snapshot 1`] = `
+Object {
+  "resetUserID": "RESET_USER_ID",
+  "setUserID": "SET_USER_ID",
+}
+`;
+
+exports[`userIdActions setUserID Should match snapshot 1`] = `
+Object {
+  "id": 1,
+  "type": "SET_USER_ID",
+}
+`;

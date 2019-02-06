@@ -5,6 +5,7 @@ const deck = [
     suite: 'spades',
     symbol: 'ace',
     value: '1',
+    hidden: true,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const deck = [
     suite: 'spades',
     symbol: 'two',
     value: '2',
+    hidden: true,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const deck = [
     suite: 'spades',
     symbol: 'three',
     value: '3',
+    hidden: true,
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const deck = [
     suite: 'spades',
     symbol: 'four',
     value: '4',
+    hidden: true,
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const deck = [
     suite: 'spades',
     symbol: 'five',
     value: '5',
+    hidden: true,
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const deck = [
     suite: 'spades',
     symbol: 'six',
     value: '6',
+    hidden: true,
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const deck = [
     suite: 'spades',
     symbol: 'seven',
     value: '7',
+    hidden: true,
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const deck = [
     suite: 'spades',
     symbol: 'eight',
     value: '8',
+    hidden: true,
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ const deck = [
     suite: 'spades',
     symbol: 'nine',
     value: '9',
+    hidden: true,
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ const deck = [
     suite: 'spades',
     symbol: 'ten',
     value: '10',
+    hidden: true,
   },
   {
     id: 11,
@@ -75,6 +85,7 @@ const deck = [
     suite: 'spades',
     symbol: 'jack',
     value: '11',
+    hidden: true,
   },
   {
     id: 12,
@@ -82,6 +93,7 @@ const deck = [
     suite: 'spades',
     symbol: 'queen',
     value: '12',
+    hidden: true,
   },
   {
     id: 13,
@@ -89,6 +101,7 @@ const deck = [
     suite: 'spades',
     symbol: 'king',
     value: '13',
+    hidden: true,
   },
   {
     id: 14,
@@ -96,6 +109,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'ace',
     value: '1',
+    hidden: true,
   },
   {
     id: 15,
@@ -103,6 +117,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'two',
     value: '2',
+    hidden: true,
   },
   {
     id: 16,
@@ -110,6 +125,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'three',
     value: '3',
+    hidden: true,
   },
   {
     id: 17,
@@ -117,6 +133,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'four',
     value: '4',
+    hidden: true,
   },
   {
     id: 18,
@@ -124,6 +141,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'five',
     value: '5',
+    hidden: true,
   },
   {
     id: 19,
@@ -131,6 +149,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'six',
     value: '6',
+    hidden: true,
   },
   {
     id: 20,
@@ -138,6 +157,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'seven',
     value: '7',
+    hidden: true,
   },
   {
     id: 21,
@@ -145,6 +165,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'eight',
     value: '8',
+    hidden: true,
   },
   {
     id: 22,
@@ -152,6 +173,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'nine',
     value: '9',
+    hidden: true,
   },
   {
     id: 23,
@@ -159,6 +181,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'ten',
     value: '10',
+    hidden: true,
   },
   {
     id: 24,
@@ -166,6 +189,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'jack',
     value: '11',
+    hidden: true,
   },
   {
     id: 25,
@@ -173,6 +197,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'queen',
     value: '12',
+    hidden: true,
   },
   {
     id: 26,
@@ -180,6 +205,7 @@ const deck = [
     suite: 'clubs',
     symbol: 'king',
     value: '13',
+    hidden: true,
   },
   {
     id: 27,
@@ -187,6 +213,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'ace',
     value: '1',
+    hidden: true,
   },
   {
     id: 28,
@@ -194,6 +221,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'two',
     value: '2',
+    hidden: true,
   },
   {
     id: 29,
@@ -201,6 +229,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'three',
     value: '3',
+    hidden: true,
   },
   {
     id: 30,
@@ -208,6 +237,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'four',
     value: '4',
+    hidden: true,
   },
   {
     id: 31,
@@ -215,6 +245,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'five',
     value: '5',
+    hidden: true,
   },
   {
     id: 32,
@@ -222,6 +253,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'six',
     value: '6',
+    hidden: true,
   },
   {
     id: 33,
@@ -229,6 +261,7 @@ const deck = [
     suite: 'spades',
     symbol: 'seven',
     value: '7',
+    hidden: true,
   },
   {
     id: 34,
@@ -236,6 +269,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'eight',
     value: '8',
+    hidden: true,
   },
   {
     id: 35,
@@ -243,6 +277,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'nine',
     value: '9',
+    hidden: true,
   },
   {
     id: 36,
@@ -250,6 +285,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'ten',
     value: '10',
+    hidden: true,
   },
   {
     id: 37,
@@ -257,6 +293,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'jack',
     value: '11',
+    hidden: true,
   },
   {
     id: 38,
@@ -264,6 +301,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'queen',
     value: '12',
+    hidden: true,
   },
   {
     id: 39,
@@ -271,6 +309,7 @@ const deck = [
     suite: 'diamonds',
     symbol: 'king',
     value: '13',
+    hidden: true,
   },
   {
     id: 40,
@@ -278,6 +317,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'ace',
     value: '1',
+    hidden: true,
   },
   {
     id: 41,
@@ -285,6 +325,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'two',
     value: '2',
+    hidden: true,
   },
   {
     id: 42,
@@ -292,6 +333,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'three',
     value: '3',
+    hidden: true,
   },
   {
     id: 43,
@@ -299,6 +341,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'four',
     value: '4',
+    hidden: true,
   },
   {
     id: 44,
@@ -306,6 +349,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'five',
     value: '5',
+    hidden: true,
   },
   {
     id: 45,
@@ -313,6 +357,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'six',
     value: '6',
+    hidden: true,
   },
   {
     id: 46,
@@ -320,6 +365,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'seven',
     value: '7',
+    hidden: true,
   },
   {
     id: 47,
@@ -327,6 +373,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'eight',
     value: '8',
+    hidden: true,
   },
   {
     id: 48,
@@ -334,6 +381,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'nine',
     value: '9',
+    hidden: true,
   },
   {
     id: 49,
@@ -341,6 +389,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'ten',
     value: '10',
+    hidden: true,
   },
   {
     id: 50,
@@ -348,6 +397,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'jack',
     value: '11',
+    hidden: true,
   },
   {
     id: 51,
@@ -355,6 +405,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'queen',
     value: '12',
+    hidden: true,
   },
   {
     id: 52,
@@ -362,6 +413,7 @@ const deck = [
     suite: 'hearts',
     symbol: 'king',
     value: '13',
+    hidden: true,
   },
 ];
 
@@ -370,6 +422,7 @@ const joker = {
   suite: 'none',
   symbol: 'joker',
   value: 0,
+  hidden: true,
 };
 
 const deckWithJokers = [...deck, { ...joker, id: 53 }, { ...joker, id: 54 }];

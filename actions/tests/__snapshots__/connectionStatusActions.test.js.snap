@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connection status actions action types Should match snapshot 1`] = `
+Object {
+  "connectToGame": "CONNECT_TO_GAME",
+  "disconnectFromGame": "DISCONNECT_FROM_GAME",
+}
+`;

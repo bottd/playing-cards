@@ -23,6 +23,7 @@
     "test": "jest --watchAll"
   },
   "devDependencies": {
+    "babel-jest": "^24.0.0",
     "jest": "^24.0.0",
     "redux-devtools-extension": "^2.13.8"
   },
@@ -31,5 +32,5 @@
       "<rootDir>/!(node_modules)/**/__tests__/**/*.js?(x)",
       "<rootDir>/!(node_modules)/**/?(*.)(spec|test).js?(x)"
     ]
-   }
+  }
 }

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`roomIdActions action types Should match snapshot 1`] = `
+Object {
+  "resetRoomID": "RESET_ROOM_ID",
+  "updateRoomID": "UPDATE_ROOM_ID",
+}
+`;
+
+exports[`roomIdActions updateRoomID Should match snapshot 1`] = `
+Object {
+  "id": 1,
+  "type": "UPDATE_ROOM_ID",
+}
+`;

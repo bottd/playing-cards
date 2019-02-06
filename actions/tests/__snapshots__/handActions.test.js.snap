@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hand actions Action types Should match snapshot 1`] = `
+Object {
+  "addCardToHand": "ADD_CARD_TO_HAND",
+  "discardCard": "DISCARD_CARD",
+  "discardHand": "DISCARD_HAND",
+  "hideCard": "HIDE_CARD",
+  "revealCard": "REVEAL_CARD",
+}
+`;
+
+exports[`Hand actions addCardToHand Should match snapshot 1`] = `
+Object {
+  "card": Object {
+    "id": 1,
+    "name": "Ace of Spades",
+  },
+  "type": "ADD_CARD_TO_HAND",
+}
+`;

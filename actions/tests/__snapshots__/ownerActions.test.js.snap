@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Owner actions action types Should match snapshot 1`] = `
+Object {
+  "resetOwner": "RESET_OWNER",
+  "setOwner": "SET_OWNER",
+}
+`;

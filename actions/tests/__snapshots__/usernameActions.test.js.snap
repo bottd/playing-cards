@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`usernameActions Action types Should match snapshot 1`] = `
+Object {
+  "resetUsername": "RESET_USERNAME",
+  "updateUsername": "UPDATE_USERNAME",
+}
+`;
+
+exports[`usernameActions updateUsername Should match snapshot 1`] = `
+Object {
+  "type": "UPDATE_USERNAME",
+  "username": "name",
+}
+`;
