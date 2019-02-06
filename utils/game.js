@@ -3,35 +3,33 @@ import Player from './player';
 
 export default class Game {
   constructor(withJokers = false, owner = 'Owner') {
-    const player = new Player(owner, 1);
+    const player = new Player(owner);
     this.deck = withJokers ? deckWithJokers : deck;
     this.discard = [];
+    this.owner = player.id;
     this.players = [player];
   }
 
   addPlayer(name) {
-    const id = this.players.length + 1;
-    const player = new Player(name, id);
+    const player = new Player(name);
     this.players = [...this.players, player];
+    return player.id;
   }
 
-  removePlayer(name) {
-    this.players = this.players.filter(player => player.name !== name);
-    this.setPlayerIds();
-  }
-
-  setPlayerIds() {
-    this.players.forEach((player, ind) => player.setId(ind + 1));
+  removePlayer(id) {
+    this.players = this.players.filter(player => player.id !== id);
   }
 
   discardPlayerCard(playerId, cardId) {
-    const card = this.players[playerId - 1].discardCard(cardId);
+    const player = this.players.find(player => player.id === playerId);
+    const card = player.discardCard(cardId);
     this.discard = [...this.discard, card];
   }
 
   dealCard(playerId) {
     const card = this.deck.pop();
-    this.players[playerId - 1].addCard(card);
+    const player = this.players.find(player => player.id === playerId);
+    player.addCard(card);
   }
 
   shuffleCards() {
@@ -46,9 +44,9 @@ export default class Game {
   }
 
   shuffleInDiscarded() {
-    if (this.discarded.length) {
-      this.deck = [...this.discarded, ...this.deck];
-      this.discarded = [];
+    if (this.discard.length) {
+      this.deck = [...this.discard, ...this.deck];
+      this.discard = [];
     }
     this.shuffleCards();
   }
