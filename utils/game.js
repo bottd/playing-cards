@@ -1,7 +1,7 @@
-import { deck, deckWithJokers } from './cards';
-import Player from './player';
+const { deck, deckWithJokers } = require('./cards');
+const Player = require('./player');
 
-export default class Game {
+class Game {
   constructor(withJokers = false, owner = 'Owner') {
     const player = new Player(owner);
     this.deck = withJokers ? deckWithJokers : deck;
@@ -51,3 +51,5 @@ export default class Game {
     this.shuffleCards();
   }
 }
+
+module.exports = Game

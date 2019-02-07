@@ -2,7 +2,6 @@ const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
 const next = require('next');
-const utils = require('./utils');
 
 const app = express();
 const server = http.Server(app);

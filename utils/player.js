@@ -1,6 +1,6 @@
-import v1 from 'uuid/v1';
+const v1 = require('uuid/v1');
 
-export default class Player {
+class Player {
   constructor(name) {
     this.name = name || 'Player';
     this.id = v1();
@@ -26,3 +26,5 @@ export default class Player {
     return card;
   }
 }
+
+module.exports = Player;
