@@ -4,6 +4,7 @@ import fetch from 'isomorphic-unfetch';
 import { connect } from 'react-redux';
 import { requestSocket } from '../actions/socketActions';
 import ConnectForm from '../components/ConnectForm';
+import './index.css';
 
 class ChatOne extends Component {
   static async getInitialProps({ req }) {
@@ -13,7 +14,6 @@ class ChatOne extends Component {
   render() {
     return (
       <main>
-        <h1>Hello World</h1>
         <ConnectForm/>
       </main>
     );
