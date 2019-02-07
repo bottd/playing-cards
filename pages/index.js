@@ -20,6 +20,7 @@ class ChatOne extends Component {
               background-color: #007328;
               background-image: url('https://www.transparenttextures.com/patterns/felt.png');
               background-color: green;
+              margin: 0;
               height: 100vh;
               width: 100vw;
             }
