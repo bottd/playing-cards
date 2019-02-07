@@ -2,9 +2,9 @@ import { Component } from 'react';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import { connect } from 'react-redux';
+import { requestSocket } from '../actions/socketActions';
 
 class ChatOne extends Component {
-  // fetch old messages data from the server
   static async getInitialProps({ req }) {
     return {};
   }
@@ -17,7 +17,10 @@ class ChatOne extends Component {
     );
   }
 }
+const mapDispatchToProps = dispatch => ({
+  requestSocket: () => dispatch(requestSocket()),
+});
 export default connect(
   null,
-  null,
+  mapDispatchToProps,
 )(ChatOne);
