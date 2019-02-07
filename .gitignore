@@ -2,3 +2,4 @@
 /.next
 /coverage
 
+.DS_Store
