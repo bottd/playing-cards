@@ -23,6 +23,11 @@ class MyApp extends App {
         <Provider store={store}>
           <Component {...pageProps} />
         </Provider>
+        <style jsx global>{`
+          body {
+            margin: 0;
+          }
+        `}</style>
       </Container>
     );
   }
