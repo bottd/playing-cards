@@ -7,7 +7,7 @@ export default function(state = initialState, action) {
     case actionTypes.resetRoomID:
       return initialState;
     case actionTypes.updateRoomID:
-      return action.roomID;
+      return action.id;
     default:
       return state;
   }
