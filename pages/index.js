@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { requestSocket } from '../actions/socketActions';
 import ConnectForm from '../components/ConnectForm';
 
-class ChatOne extends Component {
+class ConnectPage extends Component {
   static async getInitialProps({ req }) {
     return {};
   }
@@ -17,10 +17,12 @@ class ChatOne extends Component {
         <style jsx>
           {`
             main {
+              display: flex;
+              align-items: center;
+              justify-content: center;
               background-color: #007328;
               background-image: url('https://www.transparenttextures.com/patterns/felt.png');
               background-color: green;
-              margin: 0;
               height: 100vh;
               width: 100vw;
             }
@@ -37,4 +39,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   null,
   mapDispatchToProps,
-)(ChatOne);
+)(ConnectPage);
