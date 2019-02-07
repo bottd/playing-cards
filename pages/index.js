@@ -3,6 +3,7 @@ import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import { connect } from 'react-redux';
 import { requestSocket } from '../actions/socketActions';
+import ConnectForm from '../components/ConnectForm';
 
 class ChatOne extends Component {
   static async getInitialProps({ req }) {
@@ -13,6 +14,7 @@ class ChatOne extends Component {
     return (
       <main>
         <h1>Hello World</h1>
+        <ConnectForm/>
       </main>
     );
   }
