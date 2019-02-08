@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { requestSocket } from '../../actions/socketActions';
+import { resetOwner, setOwner } from '../../actions/ownerActions';
+import { updateUsername } from '../../actions/usernameActions';
+import { updateRoomID } from '../../actions/roomIdActions';
 
-export default function ConnectForm(props) {
+function ConnectForm(props) {
   const [name, setName] = useState('');
   const [gameId, setGameId] = useState('');
   const [selected, setSelected] = useState('player');
@@ -13,7 +18,19 @@ export default function ConnectForm(props) {
     setter(event.target.value);
   }
 
-  function handleSubmit() {}
+  function handleSubmit(event) {
+    event.preventDefault();
+    if (selected === 'player' && name !== '' && gameId !== '') {
+      props.resetOwner();
+      props.updateRoomID(gameId);
+    } else if (name !== '') {
+      props.setOwner();
+    }
+    props.updateUsername(name);
+    props.requestSocket();
+    setName('');
+    setGameId('');
+  }
 
   return (
     <div className="ConnectForm">
@@ -52,7 +69,7 @@ export default function ConnectForm(props) {
             value={name}
             onChange={e => handleChange(e, setName)}
           />
-          <button className="create-game" type="submit">
+          <button className="create-game" type="submit" onClick={handleSubmit}>
             Create Game
           </button>
         </form>
@@ -78,7 +95,8 @@ export default function ConnectForm(props) {
           font-size: 1.25em;
           width: 50%;
         }
-        .create-game, .join-game {
+        .create-game,
+        .join-game {
           background-color: #fff;
           border: 1px solid #004489;
           font-size: 1.25em;
@@ -101,3 +119,16 @@ export default function ConnectForm(props) {
     </div>
   );
 }
+
+const mapDispatchToProps = dispatch => ({
+  requestSocket: () => dispatch(requestSocket()),
+  resetOwner: () => dispatch(resetOwner()),
+  setOwner: () => dispatch(setOwner()),
+  updateUsername: username => dispatch(updateUsername(username)),
+  updateRoomID: id => dispatch(updateRoomID(id)),
+});
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(ConnectForm);
