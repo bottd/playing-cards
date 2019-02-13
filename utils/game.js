@@ -11,7 +11,7 @@ class Game {
   }
 
   collectGameData(id) {
-    const player = this.players.find(player.id === id);
+    const player = this.players.find(player => player.id === id);
     if (!player) {
       return;
     }
@@ -24,6 +24,7 @@ class Game {
           name: player.name,
         };
       }
+      return acc;
     }, {});
     const cardCount = this.deck.length;
     const discardCount = this.discard.length;
