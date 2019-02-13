@@ -1,4 +1,12 @@
-import { all, delay, call, put, select, take, takeLatest } from 'redux-saga/effects';
+import {
+  all,
+  delay,
+  call,
+  put,
+  select,
+  take,
+  takeLatest,
+} from 'redux-saga/effects';
 import es6promise from 'es6-promise';
 import 'isomorphic-unfetch';
 import io from 'socket.io-client';
@@ -12,8 +20,8 @@ function* connectToServer() {
   try {
     const socket = yield io();
     const formData = yield select(getFormData);
-    console.log(formData);
     socket.emit('joinGame', formData);
+    socket.on('joinGameData', data => console.log(data));
     yield put(setSocket(socket));
     yield put(connectToGame());
   } catch (error) {}
