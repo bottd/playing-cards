@@ -10,6 +10,26 @@ class Game {
     this.players = [player];
   }
 
+  collectGameData(id) {
+    const player = this.players.find(player.id === id);
+    if (!player) {
+      return;
+    }
+    const handData = this.players.reduce((acc, player) => {
+      if (player.id === id) {
+        acc.hand = player.hand;
+      } else {
+        acc[player.id] = {
+          hand: player.hand,
+          name: player.name,
+        };
+      }
+    }, {});
+    const cardCount = this.deck.length;
+    const discardCount = this.discard.length;
+    return { ...handData, cardCount, discardCount };
+  }
+
   addPlayer(name) {
     const player = new Player(name);
     this.players = [...this.players, player];
@@ -34,12 +54,11 @@ class Game {
 
   shuffleCards() {
     const cardCount = this.deck.length;
-    for (let i = cardCount -1; i >= 0; i -= 1) {
-      const randInd = Math.floor(Math.random() * (cardCount))
+    for (let i = cardCount - 1; i >= 0; i -= 1) {
+      const randInd = Math.floor(Math.random() * cardCount);
       const swap = this.deck[i];
       this.deck[i] = this.deck[randInd];
       this.deck[randInd] = swap;
-
     }
   }
 
@@ -52,4 +71,4 @@ class Game {
   }
 }
 
-module.exports = Game
+module.exports = Game;
